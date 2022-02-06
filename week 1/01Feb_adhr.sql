@@ -443,7 +443,8 @@ SELECT
     empno,ename,sal,comm,sal+comm,sal+nvl(comm,0)
 FROM
     emp
-ORDER BY comm;
+ORDER BY 
+    comm;
 -- if comm 0 or comm is null -> 100 -> case when expression then action end 
 -- if com >0   comm
 SELECT
