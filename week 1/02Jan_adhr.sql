@@ -139,10 +139,10 @@ GROUP BY
 SELECT
     branch.branchname,dept.dname,sum(sal)
 FROM 
-   BRANCH JOIN DEPT
-    ON BRANCH.BRANCHNO=DEPT.BRANCHNO
-    JOIN EMP
-    ON DEPT.DEPTNO=EMP.DEPTNO
+   branch JOIN dept
+    ON branch.branchno=dept.branchno
+    JOIN emp
+    ON dept.deptno=emp.deptno
 
 GROUP BY
     branch.branchname,dept.dname
@@ -182,10 +182,25 @@ select empno ,ename ,sal ,sal+'0' from emp ;
 -- to a DATE value using the default date format 'DD-MON-YY':
 -- Display details of employees join on 3rd Dec'1981
 -- ################################################################
-select empno,ename,hiredate from emp where hiredate='03-dec-81';
+SELECT
+    empno,ename,hiredate 
+FROM
+    emp 
+WHERE
+    hiredate='03-dec-81';
 
-select empno,ename,hiredate from emp where hiredate=to_date('3-12-1981','dd-mm-yyyy');
+SELECT
+    empno,ename,hiredate
+FROM
+    emp 
+WHERE 
+    hiredate=to_date('3-12-1981','dd-mm-yyyy');
 
+SELECT
+    TO_CHAR('01110'),TO_CHAR('01110'+1),TO_CHAR('01110'+11)
+FROM
+    dual;
+    
 -- ################################################################ 
 -- List empno,ename,mgr,manger name 
 -- ################################################################ 
@@ -209,7 +224,11 @@ INSERT INTO date_tab VALUES (
    TIMESTAMP'1999-12-02 10:00:00 -8:00', 
    TIMESTAMP'1999-12-02 10:00:00 -8:00',
    TIMESTAMP'1999-12-02 10:00:00 -8:00');
-SELECT * FROM DATE_TAB;
+
+SELECT 
+    *
+FROM 
+    DATE_TAB;
 
 -- Timezone is -8:00
 ALTER SESSION SET TIME_ZONE = '-8:00';
@@ -235,3 +254,4 @@ INSERT INTO date_tab VALUES (
    TIMESTAMP'1999-12-02 10:00:00 -8:00',
    TIMESTAMP'1999-12-02 10:00:00 -8:00');
 SELECT * FROM DATE_TAB;
+

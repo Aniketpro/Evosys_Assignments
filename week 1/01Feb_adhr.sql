@@ -558,26 +558,6 @@ WHERE
         emp;
     
 -- 3. Final
-
-
-
-
-
-
-
-
-
-
-
-
-SELECT 
-        empno,ename,deptno
-    FROM
-        emp
-    WHERE
-        sal=(SELECT max(sal) FROM emp)
-
-
 SELECT
     deptno
 FROM
@@ -611,23 +591,38 @@ WHERE
     FROM
         emp;
     
+    select avg(sal) from emp;
 -- 3. Final
 SELECT 
-        empno,ename,deptno
+        empno,ename,deptno,sal
     FROM
         emp
     WHERE
-    deptno IN (SELECT       deptno     FROM         emp
-            WHERE         sal>(SELECT avg(sal) FROM emp))
-    and
-    sal>(SELECT avg(sal) FROM emp)
+    deptno IN (SELECT 
+                    deptno     
+                FROM 
+                    emp
+                WHERE        
+                    sal>(SELECT avg(sal) FROM emp))
     ORDER BY
     deptno;
 -- ################################################################
--- 18.4. Display empno,ename,deptno for employee earning greater than any from employees of dept 30
+-- 18.4. Display empno,ename,deptno for employee earning greater than any employees of dept 30
 -- ################################################################
-SELECT sal FROM emp WHERE deptno=30 order by sal;
-SELECT      empno,ename,deptno,sal FROM         emp where deptno!=30
+SELECT 
+    sal 
+FROM 
+    emp 
+WHERE 
+    deptno=30 
+ORDER BY sal;
+
+SELECT 
+    empno,ename,deptno,sal 
+FROM
+    emp 
+WHERE
+    deptno!=30;
 
 
 
