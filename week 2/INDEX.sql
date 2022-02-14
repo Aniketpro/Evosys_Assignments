@@ -110,5 +110,5 @@ SELECT
 FROM 
     TABLE(DBMS_XPLAN.DISPLAY());      
 
--- 
+
 commit;
