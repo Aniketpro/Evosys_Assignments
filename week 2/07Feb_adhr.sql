@@ -17,7 +17,7 @@ FROM
 --########################################################################
 --  view
 --########################################################################
-CREATE VIEW vw_empdetails
+CREATE OR REPLACE VIEW vw_empdetails
 AS
 SELECT
     e.empno,e.ename,e.job,e.sal,d.dname,b.location
