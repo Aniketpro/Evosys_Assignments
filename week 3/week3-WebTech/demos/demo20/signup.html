@@ -1,0 +1,69 @@
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<!-- <body onmouseenter="callAlert()"> -->
+<body>
+<div class="container">
+        <!-- Structure to present data on web -->
+        <header>
+            <!-- <h1 onclick="alert('You are on Signup page')" on>SIGN UP</h1> -->
+            <h1 >SIGN UP</h1>
+            <nav>
+                <a href="aboutus.html"  target="_self">About Us </a>
+                <a href="contactus.html"target="_self">Contact Us </a>
+                <a href="signup.html"   target="_self">Sign up </a>
+                <a href="signin.html"   target="_self">Sign in </a>
+            </nav>
+        </header>
+<section>
+    <div id="form_div">
+        <form action="welcome" method="POST" onsubmit="return validation(event)">
+            <pre>
+                <div>
+                    <label for="firstName">First Name</label>
+                    <input type="text" name="firstName" id="firsName" required autofocus>
+                </div>
+                <div>
+                    <label for="lastName">Last Name</label>
+                    <input type="text" name="lastName" id="lastName" required>
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" required>
+                </div>
+                <div>
+                    <label for="confirm_password">Confirm Password</label>
+                    <input type="password" name="cpassword" id="cpassword" required> <span id="err_cpassword"></span>
+                    
+                </div>
+                <div>
+                    <input type="submit" value="Sign Up">
+                </div>
+            </pre>
+        </form>
+    </div>
+</section>
+            <footer>
+            <h6>Mastek &copy; 2022</h6>
+            </footer>
+
+</div>
+<!-- External JavaScript -->
+<script src="signup.js"></script>
+<!-- Internal Javascript -->
+<!-- <script>
+    function callAlert(){
+        alert("Signup page is getting loaded! Please wait!");
+    } -->
+    
+</script>    
+</body>
+
+</html>

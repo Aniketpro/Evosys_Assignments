@@ -1,0 +1,53 @@
+body{
+    background-color:black;
+    color:white;
+}
+.container{
+    background-color: greenyellow;
+    color:navy;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height:80%;
+    width:100%;
+}
+header >h1{
+    background-color: white;
+    color:navy;
+    text-align: center;
+}
+nav{
+    background-color: rgb(252, 7, 7);
+    display:inline-block;
+    margin:1px;
+    text-align: right;
+    width: 100%;   
+}
+nav >a{
+    color:rgb(138, 207, 202);
+    margin:2px;
+}
+.heading{
+    text-align: center;
+    width: 100%;
+}
+section{
+    background-color:goldenrod;
+    color:maroon;
+    height:60%;
+    text-align: center;
+    width:100%;
+    
+}
+pre > div{
+    height:5%;
+}
+div > label{
+
+    font-weight: bold;
+}
+
+footer{
+    background-color: white;
+    color:navy;
+    font-weight: bolder;
+    text-align: center;
+}
