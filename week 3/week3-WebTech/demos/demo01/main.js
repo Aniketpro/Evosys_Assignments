@@ -19,7 +19,7 @@ console.log("After function call : "+num1);
 function f2(){
     // console.log("inseide f1() outer variable before reassigning value : "+num1);
     let num1=33333; // intialized with some other  value 
-    console.log("inside f1() outer variable after reassigning value: "+num1);
+    console.log("inside f2() outer variable after reassigning value: "+num1);
 }
 console.log("Before function call: "+num1);//2000
 f2();// undefined // 33333

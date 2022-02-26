@@ -7,7 +7,15 @@ function addition(n1,n2){
 }
 function subtraction(n1,n2){
     const result=n1-n2;
-    console.log(n1+"+"+n2+"= "+result);
+    console.log(n1+"-"+n2+"= "+result);
+}
+function multiplication(n1,n2){
+    const result=n1*n2;
+    console.log(n1+"*"+n2+"= "+result);
+}
+function division(n1,n2){
+    const result=n1/n2;
+    console.log(n1+"/"+n2+"= "+result);
 }
 
 addition(10,20);

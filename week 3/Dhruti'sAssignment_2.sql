@@ -1,0 +1,13 @@
+--1) Create a Package and do the following tasks
+--2) Write a PL/SQL explicit cursor that will display customer name, 
+--total billing amount and their category based on their billing amount.
+--    < 100 Category A
+--    >= 100 and < 1000 Category B
+--    >= 1000 and <=10000 Category C
+--    Insert the Resultant Data in some Other Customer-Purchase Tbl
+--3) Create a Trigger that will Auto-populate the data in History table 
+--when anything is inserted or updated in Customer-Purchase Tbl with created timestamp
+--4) PL/SQL Function to find item which has minimum price in a table
+--5) Create Index for Customer-Purchase Tbl
+--6) Write a Stored Procedure to find the total purchase for each customer and
+--total sale of each product using this table and insert these values in two other tables.
