@@ -24,6 +24,9 @@ INSERT INTO CUSTOMER values ( CUSTOMER_ID.nextval,'MANAV','9632481699','PUNE','2
 INSERT INTO CUSTOMER values ( CUSTOMER_ID.nextval,'JAY','9530731899','BHOPAL','29-05-2001');
 ===============================================================================================
 SELECT * FROM CUSTOMER;
+SELECT * FROM purchase;
+SELECT * FROM product;
+
 =============================================================================
 
 CREATE sequence PRODUCT_ID
@@ -49,6 +52,8 @@ INSERT INTO PRODUCT values ( PRODUCT_ID.nextval,'HIAR_DRYER','6731699','BEST SER
 INSERT INTO PRODUCT values ( PRODUCT_ID.nextval,'FACE_WASH','9731699','SEPCIAL FOR DEY SKIN','900');
 INSERT INTO PRODUCT values ( PRODUCT_ID.nextval,'LAPTOP','96381699','MULTITASKING AND FOR GAME','60000');
 INSERT INTO PRODUCT values( PRODUCT_ID.nextval,'MOBILE','963899','BEST CAMERA WITH POPOP','25000');
+INSERT INTO PRODUCT values ( PRODUCT_ID.nextval,'CHARGER','81675','SUPER FAST CHARGING','900');
+COMMIT;
 =======================================================================================================
 SELECT * FROM PRODUCT;
 =======================================================================================================

@@ -1,0 +1,2 @@
+module demo05 {
+}
